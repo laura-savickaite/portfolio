@@ -19,9 +19,8 @@ document.addEventListener('DOMContentLoaded', function loaded() {
     //     }
     // })
 
-    var projects = document.getElementsByClassName('projects');
-    var projets = projects[0];
-    let projectsLi = projets.querySelectorAll('li');
+    var projects = document.getElementById('projects');
+    let projectsLi = projects.querySelectorAll('li');
 
     let options = {
 
