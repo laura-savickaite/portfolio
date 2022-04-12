@@ -246,10 +246,10 @@ main {
     transform: translateX(-1700%);
 }
 
-#projects ul li:hover {
+.hover:hover {
     color: #e66465;
 }
-#projects li:nth-child(even):hover{
+.hover:nth-child(even):hover{
     color:#9198e5;
  }
 
