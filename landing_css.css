@@ -179,6 +179,20 @@ main {
     font-family: lorem;
 }
 
+.links a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.links a:hover {
+    color: #e66465;
+    font-style: italic;
+}
+
+
+
+
 
 /* PROJETS */
 
@@ -275,9 +289,11 @@ h3 {
     padding: 3%;
 }
 
-#img-linkedin {
-    padding-bottom: 100px;
-}
+h3:hover{
+    color:#9198e5;
+ }
+
+
 
 
 
