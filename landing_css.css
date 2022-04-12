@@ -136,6 +136,8 @@ main {
 }
 
 
+
+
 /* ABOUT ME */
 
 #aboutme {
@@ -164,7 +166,7 @@ main {
 {
     position: absolute;
     right: 5%;
-    top: 20%;
+    top: 0;
 }
 
 #bio 
@@ -190,6 +192,11 @@ main {
     font-style: italic;
 }
 
+.links a:hover {
+    color: #e66465;
+    font-style: italic;
+}
+
 
 
 
@@ -197,7 +204,7 @@ main {
 /* PROJETS */
 
 #projects {
-    height: 160vh;
+    height: 140vh;
     width: 100vw;
 }
 
@@ -256,6 +263,10 @@ main {
 .gap {
     width: 0.5em;
 }
+
+
+
+
 
 /* CONTACT */
 

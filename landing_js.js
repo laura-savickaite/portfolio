@@ -1,23 +1,13 @@
 
 document.addEventListener('DOMContentLoaded', function loaded() {
 
-    document.documentElement.addEventListener("load", function(){
-        document.getElementById("loader").style.display = "block";
-    });
-    window.addEventListener("load", function(){
-        document.getElementById("loader").style.display = "none";
-    });
+    // document.documentElement.addEventListener("load", function(){
+    //     document.getElementById("loader").style.display = "block";
+    // });
+    // window.addEventListener("load", function(){
+    //     document.getElementById("loader").style.display = "none";
+    // });
 
-
-    // var navigation = document.getElementsByClassName('navigation');
-    // var nav = navigation[0]
-    // window.addEventListener('scroll', () =>{
-    //     if(window.scrollY>300){
-    //         nav.classList.add('anim-nav');
-    //     }else {
-    //         nav.classList.remove('anim-nav');
-    //     }
-    // })
 
     var projects = document.getElementById('projects');
     let projectsLi = projects.querySelectorAll('li');
@@ -64,11 +54,6 @@ document.addEventListener('DOMContentLoaded', function loaded() {
     // })  
     });
 
-    // var titre = document.querySelectorAll('h1');
-    // var h1 = titre[0];
-    // new simpleParallax(h1, {
-    //     orientation: 'right'
-    // });
 
     var test = document.getElementsByClassName('img2');
     var truc = test[0];
