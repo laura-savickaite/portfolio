@@ -235,7 +235,6 @@ main {
    justify-content: flex-start;
 }
 
-
 #projects ul li span.active {
     transform: translateX(0);
     transition: 2.5s ease-out;
@@ -249,6 +248,11 @@ main {
     word-spacing: 10px;
     transform: translateX(1700%);
 }
+
+.gap {
+    width: 0.5em;
+}
+
 #projects li:nth-child(even) span {
     transform: translateX(-1700%);
 }
@@ -261,6 +265,10 @@ main {
     color:#9198e5;
  }
 
+.hiddenimg {
+    display: none;
+}
+
 .hover:hover .hiddenimg{
     display: block;
     position: absolute;
@@ -269,15 +277,6 @@ main {
 }
 
 
-
-
-.gap {
-    width: 0.5em;
-}
-
-.hiddenimg {
-    display: none;
-}
 
 
 
