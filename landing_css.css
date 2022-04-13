@@ -310,10 +310,7 @@ main {
 
 }
 
-#aboutme {
-    height: 120vh;
-    width: 100vw;
-}
+
 
 .img2
 {
@@ -324,6 +321,12 @@ main {
 /* ordinateur */
 
 @media (min-width: 822px) {
+    
+    #aboutme {
+    height: 120vh;
+    width: 100vw;
+    }
+
     #aboutme h1 
     {
         position: absolute;
@@ -387,87 +390,121 @@ main {
 
     .links {
         width: 40%;
+        text-align: justify;
     }
-
 
 
 
 
 /* PROJETS */
 
-/* #projects {
-    height: 140vh;
-    width: 100vw;
+/* mobile */
+
+@media (max-width: 821px){
+
+    #projects h1 {
+        margin-top: 40%;
+        font-size: 3rem;
+        font-family: extra;
+        font-weight: bold;
+        margin-left: 3%;
+    }
+
+    #projects ul {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin: 2%;
+        margin-top: 10%;
+    }
+
+    #projects ul li span {
+        display: none;
+    }
+
+    #projects span img {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
 }
 
-#projects h1 {
-    font-size: 10rem;
-    font-family: extra;
-    letter-spacing: 10px;
-    font-weight: bold;
-    margin-left: 3%;
+    #projects ul li {
+        display: flex;
+        justify-content: flex-end; 
+        cursor: pointer;
+    }
+
+
+
+/* ordinateur */
+
+@media (min-width: 821px){
+    #projects {
+        height: 140vh;
+        width: 100vw;
+    }
+
+    #projects h1 {
+        font-size: 10rem;
+        font-family: extra;
+        letter-spacing: 10px;
+        font-weight: bold;
+        margin-left: 3%;
+    }
+
+    #projects ul {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        height: 100vh;
+        margin: 2%;
+        margin-top: 10%;
+    }
+
+
+    #projects ul li span.active {
+        transform: translateX(0);
+        transition: 2.5s ease-out;
+    }
+
+    #projects ul li span {
+        display: block;
+        line-height: 7rem;
+        font-size: 6rem;
+        font-family: extra;
+        word-spacing: 10px;
+        transform: translateX(1700%);
+    }
+
+    .gap {
+        width: 0.5em;
+    }
+
+    #projects li:nth-child(even) span {
+        transform: translateX(-1700%);
+    }
+
+    .hover:hover {
+        color: #e66465;
+    }
+
+    .hover:nth-child(even):hover{
+        color:#9198e5;
+    }
+
+    .hiddenimg {
+        display: none;
+    }
+
+    .hover:hover .hiddenimg{
+        display: block;
+        position: absolute;
+        left: 30%;
+        z-index: 2
+    }
 }
-
-#projects ul {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    height: 100vh;
-    margin: 2%;
-    margin-top: 10%;
-}
-
-#projects ul li {
-    display: flex;
-    justify-content: flex-end; 
-    cursor: pointer;
-}
-
-#projects li:nth-child(even){
-   justify-content: flex-start;
-}
-
-#projects ul li span.active {
-    transform: translateX(0);
-    transition: 2.5s ease-out;
-}
-
-#projects ul li span {
-    display: block;
-    line-height: 7rem;
-    font-size: 6rem;
-    font-family: extra;
-    word-spacing: 10px;
-    transform: translateX(1700%);
-}
-
-.gap {
-    width: 0.5em;
-}
-
-#projects li:nth-child(even) span {
-    transform: translateX(-1700%);
-}
-
-.hover:hover {
-    color: #e66465;
-}
-
-.hover:nth-child(even):hover{
-    color:#9198e5;
- }
-
-.hiddenimg {
-    display: none;
-}
-
-.hover:hover .hiddenimg{
-    display: block;
-    position: absolute;
-    left: 30%;
-    z-index: 2
-} */
-
 
 
 
@@ -475,24 +512,54 @@ main {
 
 /* CONTACT */
 
-#contact 
-{
-    margin-top: 15%;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(31, 30, 30);
+/* mobile */
+
+@media (max-width: 821px){
+
+    #contact 
+    {
+        margin-top: 15%;
+        width: 100vw;
+        background-color: rgb(31, 30, 30);
+    } 
+
+    h3 {
+        color: white;
+        width: 50%;
+        text-align: justify;
+        font-family: lorem;
+        font-size: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 15%;
+    }
 }
 
-h3 {
-    color: white;
-    width: 30%;
-    text-align: justify;
-    font-family: lorem;
-    font-size: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 15%;
+/* ordinateur */
+
+@media (min-width: 821px){
+
+    #contact 
+    {
+        margin-top: 15%;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(31, 30, 30);
+    }
+
+    h3 {
+        color: white;
+        width: 30%;
+        text-align: justify;
+        font-family: lorem;
+        font-size: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 15%;
+    }
 }
+
+
 
 .icons-contact {
     /* text-align: center; */
