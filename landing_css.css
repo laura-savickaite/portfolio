@@ -31,7 +31,24 @@ body {
     overflow-x: hidden;
 }
 
-.noise::before {
+body,
+h1,
+h2,
+h3,
+h4,
+figure,
+picture {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+body:before {
     position: fixed;
     top:0;
     left:0;
@@ -53,10 +70,20 @@ a {
     color: black;
 }
 
+@media (prefers-reduced-motions: reduce){
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
 
 
 
-/* HEADER */
+    /* HEADER */
 
 header 
 {
@@ -64,55 +91,166 @@ header
     height: 100vh;
 }
 
-.border {
-    border: 1px solid black;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15%;
-    width: 600px;
-    height: 400px;
-    font-family: navitalic;
-    font-weight: bold;
-    background: radial-gradient(#e66465, #9198e5);
+/* mobile */
+
+@media (max-width: 821px){
+
+    .border {
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40%;
+        font-family: navitalic;
+        font-weight: bold;
+        height: 70%;
+        width: 70%;
+        background: radial-gradient(#e66465, #9198e5);
+    } 
+
+    #word1 {
+        position: absolute;
+        top: 5%;
+        left: 3%;
+        background: transparent;
+        text-align: center;
+        font-size: 4rem;
+        cursor: pointer;
+    }
+    #word2 {
+        position: absolute;
+        top: 25%;
+        background: transparent;
+        text-align: center;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+    #word3 {
+        position: absolute;
+        top: 45%;
+        background: transparent;
+        text-align: center;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+    #word4 {
+        position: absolute;
+        top: 65%;
+        background: transparent;
+        text-align: center;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+
 }
 
-#word1 {
-    margin-top: -9%;
-    background: transparent;
-    width: 400px;
-    text-align: center;
-    font-size: 4rem;
-    cursor: pointer;
+/* ipad */
+
+/* @media (max-width: 821px){
+
+    .border {
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40%;
+        width: 250px;
+        height: 550px;
+        font-family: navitalic;
+        font-weight: bold;
+        background: radial-gradient(#e66465, #9198e5);
+    } 
+
+    #word1 {
+        position: absolute;
+        top: 5%;
+        left: 3%;
+        background: transparent;
+        text-align: center;
+        font-size: 4rem;
+        cursor: pointer;
+    }
+    #word2 {
+        position: absolute;
+        top: 25%;
+        background: transparent;
+        text-align: center;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+    #word3 {
+        position: absolute;
+        top: 45%;
+        background: transparent;
+        text-align: center;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+    #word4 {
+        position: absolute;
+        top: 65%;
+        background: transparent;
+        text-align: center;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+
+} */
+
+/* ordinateur */
+
+@media (min-width: 822px) {
+    .border {
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15%;
+        width: 600px;
+        height: 400px;
+        font-family: navitalic;
+        font-weight: bold;
+        background: radial-gradient(#e66465, #9198e5);
+    } 
+
+    #word1 {
+        margin-top: -9%;
+        background: transparent;
+        width: 400px;
+        text-align: center;
+        font-size: 4rem;
+        cursor: pointer;
+    }
+    #word2 {
+        margin-top: 10%;
+        margin-left: 70%;
+        transform: rotate(90deg); 
+        background: transparent;
+        width: 400px;
+        text-align: center;
+        font-size: 4rem;
+        cursor: pointer;
+    }
+    #word3 {
+        margin-top: 39%;
+        margin-left: 61%;
+        background: transparent;
+        width: 220px;
+        text-align: center;
+        font-size: 4rem;
+        cursor: pointer;
+    }
+    #word4 {
+        margin-top: -50%;
+        margin-left: -37%;
+        transform: rotate(-90deg); 
+        background: transparent;
+        width: 400px;
+        text-align: center;
+        font-size: 4rem;
+        cursor: pointer;
+    }
 }
-#word2 {
-    margin-top: 10%;
-    margin-left: 70%;
-    transform: rotate(90deg); 
-    background: transparent;
-    width: 400px;
-    text-align: center;
-    font-size: 4rem;
-    cursor: pointer;
-}
-#word3 {
-    margin-top: 39%;
-    margin-left: 61%;
-    background: transparent;
-    width: 220px;
-    text-align: center;
-    font-size: 4rem;
-    cursor: pointer;
-}
-#word4 {
-    margin-top: -50%;
-    margin-left: -37%;
-    transform: rotate(-90deg); 
-    background: transparent;
-    width: 400px;
-    text-align: center;
-    font-size: 4rem;
-    cursor: pointer;
-}
+
+
+
 
 
 
@@ -127,70 +265,129 @@ main {
 
 /* ABOUT ME */
 
+
+/* mobile */
+
+@media (max-width: 821px){
+
+    .img2 
+    {
+        width: 40%;
+    }
+
+    #aboutme h1 
+    {
+        font-size: 3rem;
+        font-family: extra;
+        font-weight: bold;
+    }
+
+    .icons 
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }  
+
+    #bio {
+        display: flex;
+        flex-direction: row;
+        font-family: lorem;
+        text-align: justify;
+        padding: 2%;
+    }
+
+    .techno {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20%;
+    }
+
+    #aboutme h3 {
+        font-size: 2rem;
+        margin-left: -20%;
+    }
+
+}
+
 #aboutme {
     height: 120vh;
     width: 100vw;
 }
 
-#aboutme h3 {
-    color: black;
-}
-
-#aboutme h3:hover {
-    color:#9198e5;
- }
-
 .img2
 {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
 }
 
-#aboutme h1 
-{
-    position: absolute;
-    right: 10%;
-    z-index: 1;
-    font-size: 10rem;
-    font-family: extra;
-    letter-spacing: 10px;
-    font-weight: bold;
+/* ordinateur */
+
+@media (min-width: 822px) {
+    #aboutme h1 
+    {
+        position: absolute;
+        right: 10%;
+        z-index: 1;
+        font-size: 10rem;
+        font-family: extra;
+        letter-spacing: 10px;
+        font-weight: bold;
+    } 
+
+    .icons 
+    {
+        position: absolute;
+        right: 5%;
+        top: 0;
+    } 
+
+    #bio 
+    {
+        width: 20%;
+        text-align: justify;
+        margin-left: auto;
+        margin-right: 15%;
+        margin-top: -15%;
+        line-height: 1.5;
+        font-size: larger;
+        font-family: lorem;
+    }
+
+    #aboutme h3:hover {
+        color:#9198e5;
+    }
+
+    .links {
+        width: 40%;
+        margin-left: 60%;
+    }
 }
 
-.icons 
-{
-    position: absolute;
-    right: 5%;
-    top: 3%;
-}
+    #aboutme h3 {
+        color: black;
+    }
 
-#bio 
-{
-    width: 20%;
-    text-align: justify;
-    margin-left: auto;
-    margin-right: 15%;
-    margin-top: -5%;
-    line-height: 1.5;
-    font-size: larger;
-    font-family: lorem;
-}
 
-.links a {
+    .links a:hover {
+        color: #e66465;
+        font-style: italic;
+    }
+
+    .links a:hover {
+        color: #e66465;
+        font-style: italic;
+    }
+    .links a {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-}
+    justify-content: space-evenly;
+    font-family: lorem;
+    }
 
-.links a:hover {
-    color: #e66465;
-    font-style: italic;
-}
-
-.links a:hover {
-    color: #e66465;
-    font-style: italic;
-}
+    .links {
+        width: 40%;
+    }
 
 
 
@@ -198,7 +395,7 @@ main {
 
 /* PROJETS */
 
-#projects {
+/* #projects {
     height: 140vh;
     width: 100vw;
 }
@@ -269,7 +466,7 @@ main {
     position: absolute;
     left: 30%;
     z-index: 2
-}
+} */
 
 
 
