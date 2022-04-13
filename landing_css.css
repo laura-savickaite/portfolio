@@ -55,19 +55,6 @@ a {
 
 
 
-/* LOADER */
-
-#loader {
-    background-color: rgb(31, 30, 30);
-    height: 100vh;
-    z-index: 20000;
-}
-
-#loader h1 {
-    margin: 0;
-}
-
-
 
 /* HEADER */
 
@@ -174,7 +161,7 @@ main {
 {
     position: absolute;
     right: 5%;
-    top: 0;
+    top: 3%;
 }
 
 #bio 
