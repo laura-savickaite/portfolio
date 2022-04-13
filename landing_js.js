@@ -1,13 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function loaded() {
 
-    // document.documentElement.addEventListener("load", function(){
-    //     document.getElementById("loader").style.display = "block";
-    // });
-    // window.addEventListener("load", function(){
-    //     document.getElementById("loader").style.display = "none";
-    // });
-
 
     var projects = document.getElementById('projects');
     let projectsLi = projects.querySelectorAll('li');
