@@ -141,9 +141,17 @@ main {
 /* ABOUT ME */
 
 #aboutme {
-    height: 80vh;
+    height: 120vh;
     width: 100vw;
 }
+
+#aboutme h3 {
+    color: black;
+}
+
+#aboutme h3:hover {
+    color:#9198e5;
+ }
 
 .img2
 {
